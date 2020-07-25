@@ -31,6 +31,8 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Category', name: 'category', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'markdown', required: false }
