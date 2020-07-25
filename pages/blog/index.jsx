@@ -59,7 +59,7 @@ export default class Blog extends Component {
               {
                   postsList.map((post, index)=>{
                   return (
-                      <BlogPostCard key={post.slug} slug={post.slug} title={post.attributes.title} excerpt={post.excerpt} titleBgColor="#000000" img={post.attributes.thumbnail} category={post.cateogry} date={post.date} />
+                      <BlogPostCard key={post.slug} slug={post.slug} title={post.attributes.title} excerpt={post.excerpt} titleBgColor="#000000" img={post.attributes.thumbnail} category={post.category} date={post.date} />
                       )
                   })
               }
