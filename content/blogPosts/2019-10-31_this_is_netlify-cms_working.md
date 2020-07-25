@@ -1,5 +1,6 @@
 ---
 title: this is netlify-cms working
+category: Test
 date: 2019-10-31T12:31:22.500Z
 thumbnail: /static/img/activate_deactivate.png
 ---
