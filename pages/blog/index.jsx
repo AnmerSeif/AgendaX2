@@ -15,8 +15,9 @@ const importBlogPosts = async () => {
     .context('../../content/blogPosts', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
+  const firstThree = markdownFiles.slice(0,3);
   return Promise.all(
-    markdownFiles.map(async path => {
+    firstThree.map(async path => {
       const markdown = await import(`../../content/blogPosts/${path}`);
       return { ...markdown, slug: path.substring(0, path.length - 3) };
     })
