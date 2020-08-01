@@ -1,15 +1,15 @@
 import React from 'react';
 import Menu from '../_Menu';
-import breakpoints from '../breakpoints';
+import breakpoints from '../../breakpoints';
 
-import OakEOT from '../fonts/Oak-Bold.eot';
-import OakWOFF from '../fonts/Oak-Bold.woff';
-import OakTTF from '../fonts/Oak-Bold.ttf';
-import OakSVG from '../fonts/Oak-Bold.svg';
+import OakEOT from '../../fonts/Oak-Bold.eot';
+import OakWOFF from '../../fonts/Oak-Bold.woff';
+import OakTTF from '../../fonts/Oak-Bold.ttf';
+import OakSVG from '../../fonts/Oak-Bold.svg';
 
-import RepublicaMinorWOFF from '../fonts/Republica-Minor.ttf.woff';
-import RepublicaMinorSVG from '../fonts/Republica-Minor.ttf.svg';
-import RepublicaMinorEOT from '../fonts/Republica-Minor.ttf.eot';
+import RepublicaMinorWOFF from '../../fonts/Republica-Minor.ttf.woff';
+import RepublicaMinorSVG from '../../fonts/Republica-Minor.ttf.svg';
+import RepublicaMinorEOT from '../../fonts/Republica-Minor.ttf.eot';
 
 const Layout = ({ children }) => {
   return (
@@ -45,15 +45,15 @@ const Layout = ({ children }) => {
         body{
           background-color:#e9e8e9;
           
-          .container{
-              padding-top:8.3125em;
-              
-              ${breakpoints.greaterThan('desktop')`
-                  padding-top:0;
-              `}
-          }
-          
         }
+
+        body .container{
+          padding-top:8.3125em;
+          
+          ${breakpoints.greaterThan('desktop')`
+              padding-top:0;
+          `}
+      }
       `}</style>
     </React.Fragment>
   );
