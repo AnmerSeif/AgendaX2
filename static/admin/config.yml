@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master
 media_folder: static/img
+local_backend: true
 slug:
   encoding: 'ascii'
   clean_accents: true
@@ -37,3 +38,9 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
       - { label: 'Excerpt', name: 'excerpt', widget: 'markdown', required: false }
       - { name: categories, label: Categories, widget: categories, separator: __}
+  - label: 'Test'
+    name: 'test'
+    folder: 'content/test'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: 'title'}
+
