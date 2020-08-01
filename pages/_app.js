@@ -10,9 +10,9 @@ import OakWOFF from '../fonts/Oak-Bold.woff';
 import OakTTF from '../fonts/Oak-Bold.ttf';
 import OakSVG from '../fonts/Oak-Bold.svg';
 
-import RepublicaMinorWOFF from './fonts/Republica-Minor.ttf.woff';
-import RepublicaMinorSVG from './fonts/Republica-Minor.ttf.svg';
-import RepublicaMinorEOT from './fonts/Republica-Minor.ttf.eot';
+import RepublicaMinorWOFF from '../fonts/Republica-Minor.ttf.woff';
+import RepublicaMinorSVG from '../fonts/Republica-Minor.ttf.svg';
+import RepublicaMinorEOT from '../fonts/Republica-Minor.ttf.eot';
 
 const GlobalFonts =  createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900|Raleway:400,700,900');
