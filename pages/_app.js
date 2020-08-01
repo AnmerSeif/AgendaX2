@@ -13,8 +13,8 @@ export default class MyApp extends App {
 
     return (
       <Container>
-        <GlobalFonts />
-        <GlobalStyle />
+        {/* <GlobalFonts /> */}
+        {/* <GlobalStyle /> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
