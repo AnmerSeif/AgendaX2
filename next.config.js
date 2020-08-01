@@ -1,5 +1,7 @@
 const fs = require('fs');
 const blogPostsFolder = './content/blogPosts';
+const optimizedImages = require('next-optimized-images');
+const withFonts = require('next-fonts')
 
 const getPathsForPosts = () => {
   return fs
@@ -20,7 +22,7 @@ const getPathsForPosts = () => {
     }, {});
 };
 
-module.exports = {
+module.exports = withFonts(optimizedImages({
   webpack: configuration => {
     configuration.module.rules.push({
       test: /\.md$/,
@@ -32,6 +34,14 @@ module.exports = {
     return {
       ...defaultPathMap,
       ...getPathsForPosts(),
-    };
+      '/': { page: '/' },
+      '/om-oss': { page: '/about' },
+      '/aktiviteter': { page: '/activities' },
+      '/ungdomsbloggen': { page: '/youth-blog' },
+      '/kontakt': { page: '/contact'},
+      '/samarbeidspartnere': { page: '/partners'},
+      '/aktuelt': { page: '/blog'},
+      '/bli-frivillig': { page: '/volunteer'}
+    }
   },
-};
+}));

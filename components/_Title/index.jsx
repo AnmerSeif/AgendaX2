@@ -4,11 +4,10 @@ import styled from 'styled-components';
 const StyledTitle = styled.div`
     position: relative;
     display: inline-block;
-    font-size:1em;
+    font-size: ${props => props.size ? props.size+'em' : '1em'};
     text-transform: uppercase;
     padding:1em 1.9375em;
     margin: 1em 0;
-    fontSize: ${props => props.size}em;
 `
 
 const StyledBG = styled.span`
@@ -17,7 +16,7 @@ const StyledBG = styled.span`
     left: 0;
     width: 100%;
     height: 100%;  
-    background-color: #ff7f00;
+    background-color: ${props => props.bgColor ? props.bgColor : '#ff7f00'};
     transform: skewX(-20deg);
     z-index: 0;
     transform: skewX(${props => props.skew}deg)
@@ -46,7 +45,7 @@ export default class Title extends Component {
     render() {
         return (
             <StyledTitle size={this.props.size}>
-                <StyledBG skew={this.props.skew}></StyledBG>
+                <StyledBG bgColor={this.props.bgColor} skew={this.props.skew}></StyledBG>
                 <StyledText>{this.props.text}</StyledText>
             </StyledTitle>
         )

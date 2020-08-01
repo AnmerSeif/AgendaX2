@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Row from '../../components/_Row';
 import Title from '../../components/_Title';
+import HeaderPost from '../../components/Blog/HeaderPost';
 import BlogPostCard from '../../components/_BlogPostCard';
 
 import Link from 'next/link';
@@ -25,15 +26,15 @@ const importBlogPosts = async () => {
 };
 
 
-const YouthBlog = styled.div`
+const StyledBlog = styled.div`
   margin-top: 4.875em;
 `;
 
-const YouthBlogTitle = styled.div`
+const StyledBlogTitle = styled.div`
   margin-bottom: 7.5em;
 `;
 
-const YouthBlogPostHeader = styled.div`
+const StyledBlogPostHeader = styled.div`
   margin-bottom: 6.25em;
 `;
 
@@ -46,25 +47,25 @@ export default class Blog extends Component {
   render() {
     const { postsList } = this.props;
     return (
-      <YouthBlog>
+      <StyledBlog>
           <Row>  
-              <YouthBlogTitle>
-                  <Title text="Aktuelt." bgColor="black" size={1} />
-              </YouthBlogTitle>
+              <StyledBlogTitle>
+                  <Title text="Aktuelt." bgColor="black" size={1.5} />
+              </StyledBlogTitle>
           </Row>
           <Row>
-              {/* <HeaderPost title="Dette er en veldig lang overskrift, ok ikke så lang da..." img="/static/layer-114.jpg" category="Kategori" authorImage="/static/layer-114.jpg" authorName="Anmer Seif" date={new Date().toString()} /> */}
+              <HeaderPost title="Dette er en veldig lang overskrift, ok ikke så lang da..." img="/static/layer-114.jpg" category="Kategori" authorImage="/static/layer-114.jpg" authorName="Anmer Seif" date={new Date().toString()} />
           </Row>
           <Row>
               {
                   postsList.map((post, index)=>{
                   return (
-                      <BlogPostCard key={post.slug} slug={post.slug} title={post.attributes.title} excerpt={post.excerpt} titleBgColor="#000000" img={post.attributes.thumbnail} category={post.category} date={post.date} />
+                      <BlogPostCard key={post.slug} slug={post.slug} title={post.attributes.title} excerpt={post.excerpt} titleBgColor="#000000" img={post.attributes.thumbnail} category={post.attributes.category} date={post.date} />
                       )
                   })
               }
           </Row>
-      </YouthBlog>
+      </StyledBlog>
     );
   }
 }

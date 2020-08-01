@@ -13,11 +13,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "gsap": "^3.4.2",
     "moment": "^2.27.0",
     "next": "^9.0.5",
+    "next-fonts": "^1.4.0",
+    "next-optimized-images": "^2.6.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "frontmatter-markdown-loader": "^2.0.0"

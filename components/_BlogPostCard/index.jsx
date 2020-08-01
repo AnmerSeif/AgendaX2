@@ -20,7 +20,7 @@ const StyledBlogPostCardImageContainer = styled.div`
         display: block;
         position: absolute;
         left:0;
-        bottom: 1.3875em;
+        bottom: 2.3875em;
         width: 0;
         height: 0;
         border-bottom: 12em solid #e9e8e9;
