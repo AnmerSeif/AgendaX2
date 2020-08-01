@@ -35,13 +35,7 @@ module.exports = withFonts(optimizedImages({
       ...defaultPathMap,
       ...getPathsForPosts(),
       '/': { page: '/' },
-      '/om-oss': { page: '/about' },
-      '/aktiviteter': { page: '/activities' },
-      '/ungdomsbloggen': { page: '/youth-blog' },
-      '/kontakt': { page: '/contact'},
-      '/samarbeidspartnere': { page: '/partners'},
       '/aktuelt': { page: '/blog'},
-      '/bli-frivillig': { page: '/volunteer'}
     }
   },
 }));
