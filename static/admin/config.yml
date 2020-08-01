@@ -42,5 +42,5 @@ collections:
     name: 'test'
     folder: 'content/test'
     fields:
-      - { label: 'Title', name: 'title', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: 'title'}
+      - { label: 'Title', name: 'title', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: ['title']}
 
