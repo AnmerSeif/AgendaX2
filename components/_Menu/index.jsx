@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components';
 import breakpoints from '../../breakpoints';
 
-
-
 const StyledMenu = styled.section`
   display: block;
   position: absolute;

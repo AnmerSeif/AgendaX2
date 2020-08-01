@@ -7,21 +7,6 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Menu/>
       <main>{children}</main>
-      <style jsx global>{`
-        nav {
-          text-align: center;
-        }
-        nav a {
-          margin-right: 2px;
-
-          padding: 4px;
-        }
-
-        main {
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style>
     </React.Fragment>
   );
 };
