@@ -63,7 +63,7 @@ export default class DateAndAuthor extends Component {
                     <img src={this.props.image} />
                 </AuthorImage>
                 <DateAndTime>
-                    <time datetime={this.props.date}>{moment(this.props.date).format("DD MMM YYYY")}</time>
+                    <time dateTime={this.props.date}>{moment(this.props.date).format("DD MMM YYYY")}</time>
                     <Link><a href="">{this.props.name}</a></Link>
                 </DateAndTime>
             </Author>
