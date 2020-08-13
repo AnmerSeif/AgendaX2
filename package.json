@@ -18,7 +18,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "gsap": "^3.4.2",
     "moment": "^2.27.0",
-    "next": "^9.0.5",
+    "next": "^9.3.2",
     "next-fonts": "^1.4.0",
     "next-optimized-images": "^2.6.2",
     "nuka-carousel": "^4.7.0",
