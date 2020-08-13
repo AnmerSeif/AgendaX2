@@ -1,13 +1,8 @@
 import React from "react";
 import Carousel from 'nuka-carousel';
-
 import styled from 'styled-components';
 import breakpoints from '../../../breakpoints';
-
 import content from '../../../content/home.md';
-
-
-// import SliderInfo from './SliderInfo';
 import { TweenLite, Linear, TimelineLite } from "gsap";
 
 import LazyLoad from 'react-lazyload';
