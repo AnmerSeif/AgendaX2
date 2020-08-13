@@ -7,13 +7,8 @@ const CategoriesControl = createClass({
     render: function() {
       const separator = this.props.field.get('separator', ', ');
       var value = this.props.value;
-      return h('input', {
-        id: this.props.forID,
-        className: this.props.classNameWrapper,
-        type: 'text',
-        value: value ? value.join(separator) : '',
-        onChange: this.handleChange,
-      });
+      return h('div', {
+      }, h('h1', {value: 'hei'}))
     },
   });
   
@@ -32,5 +27,5 @@ const CategoriesControl = createClass({
       separator: { type: 'string' },
     },
   }
-  
-  export {CategoriesControl, CategoriesPreview, schema};
+
+  CMS.registerWidget('categories', CategoriesControl, CategoriesPreview, schema);

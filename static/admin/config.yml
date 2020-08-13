@@ -15,9 +15,10 @@ collections:
         name: 'home'
         file: 'content/home.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Slider1', name: 'slider1', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: ['title', 'thumbnail']}
+          - { label: 'Slider2', name: 'slider2', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: ['title', 'thumbnail']}
+          - { label: 'Slider3', name: 'slider3', widget: 'relation', collection: 'blog', searchFields: ['title'], valueField: 'title', displayFields: ['title']}
+          - { label: 'Slider hastighet (sekudner)', name: 'sliderspeed', widget: 'number' }
       - label: 'About'
         name: 'about'
         file: 'content/about.md'
