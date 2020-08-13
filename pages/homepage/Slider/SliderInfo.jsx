@@ -1,8 +1,5 @@
 import React from "react";
-import css from '../../../styles.scss';
 import Link from 'next/link';
-import { TweenLite, Linear, TimelineLite } from "gsap";
-import {TransitionGroup} from 'react-transition-group';
 
 export default class SliderInfo extends React.Component {
   constructor(props) {
